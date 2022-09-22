@@ -1,0 +1,35 @@
+Source: node-qs
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: David Paleino <dapal@debian.org>, Jérémy Lal <kapouer@melix.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-browserify-lite
+ , node-has-symbols <!nocheck>
+ , node-iconv-lite <!nocheck>
+ , node-lodash <!nocheck>
+ , node-safer-buffer <!nocheck>
+ , node-tape <!nocheck>
+ , node-util
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-qs
+Vcs-Git: https://salsa.debian.org/js-team/node-qs.git
+Homepage: https://github.com/hapijs/qs
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-qs
+Architecture: all
+Depends: ${misc:Depends}
+ , node-side-channel
+Provides: ${nodejs:Provides}
+ , libjs-qs (= ${binary:Version})
+Multi-Arch: foreign
+Description: Parse, stringify query strings for Node.js
+ This module can parse or stringify query strings, and supports
+ nested objects with brackets notation.
+ Parameters `depth` and `parameterLimit` help prevent abusive
+ user input.
+ .
+ Node.js is an event-based server-side javascript engine.

@@ -1,0 +1,172 @@
+node-qs (6.10.3+ds+~6.9.7-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>  Thu, 16 Jun 2022 13:57:37 +0800
+
+node-qs (6.10.3+ds+~6.9.7-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.10.3+ds+~6.9.7
+  * Drop embedded test modules, now available
+
+ -- Yadd <yadd@debian.org>  Thu, 13 Jan 2022 07:41:26 +0100
+
+node-qs (6.10.2+ds+~6.9.7-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Ayoyimika Ajibade ]
+  * Updated build dependency
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Fix filenamemangle
+  * Embed typescript definitions and repack
+  * New upstream version 6.10.2+ds+~6.9.7
+  * Fix build links
+  * Provides libjs-qs
+
+ -- Yadd <yadd@debian.org>  Wed, 08 Dec 2021 15:08:58 +0100
+
+node-qs (6.10.1+ds-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Yadd ]
+  * Declare compliance with policy 4.5.1
+  * Fix GitHub tags regex
+
+  [ Ayoyimika Ajibade ]
+  * New upstream version 6.10.1+ds
+  * Added package to extcopies file.
+  * Updated test command
+  * Added node_modules/ for clean build
+  * Updated standards version 4.5.1 => 4.6.0.1
+
+ -- Ayoyimika Ajibade <ayoyimikaajibade@gmail.com>  Thu, 09 Sep 2021 11:20:51 +0000
+
+node-qs (6.9.4+ds-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 6.9.4+ds
+  * Apply multi-arch hints (foreign)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 16 Nov 2020 17:41:51 +0100
+
+node-qs (6.9.1+ds-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.9.1+ds
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 05 Dec 2019 07:09:52 +0100
+
+node-qs (6.9.0+ds-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Fix debian/copyright
+  * Switch install to pkg-js-tools
+  * Generate dist/qs.js using browserify-lite
+  * New upstream version 6.9.0+ds
+  * Enable upstream test
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 20 Oct 2019 16:00:40 +0200
+
+node-qs (6.5.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.5.2
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Change section to javascript and priority to optional
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 19 Sep 2018 18:20:24 +0530
+
+node-qs (2.2.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.2.4
+  * Move to pkg-javascript
+  * Standards-Version 3.9.6
+  * New upstream, project rewritten from scratch:
+    + Homepage updated
+    + watch file updated
+    + copyright changed to BSD-3-clause
+  * Rewrite description
+  * Build-Depends nodejs
+  * Update docs
+  * Remove examples
+  * Update install files
+  * Disable test and build auto targets
+  * Fix permissions of installed files
+  * Add autopkgtest
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 12 Oct 2014 16:59:09 +0200
+
+node-qs (0.6.5-1) unstable; urgency=low
+
+  * Upstream update
+  * watch: use github directly
+  * control:
+    + Homepage to github
+    + Bump Standards-Version to 3.9.4, no changes required
+    + Canonicalize Vcs-* url
+    + Use Node.js in description
+  * copyright: add Upstream-Contact, Source fields.
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 14 Aug 2013 11:31:02 +0200
+
+node-qs (0.5.5-1) experimental; urgency=low
+
+  * Upstream update
+  * Copyright: rename MIT to Expat license
+  * Install examples.js
+  * Install the module file in qs/index.js, remove install override.
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 23 Mar 2013 21:11:26 +0100
+
+node-qs (0.4.2-1) unstable; urgency=low
+
+  * New upstream version
+  * Standards-Version bump to 3.9.3, no changes needed
+  * Update debian/copyright
+
+ -- David Paleino <dapal@debian.org>  Thu, 22 Mar 2012 22:42:39 +0100
+
+node-qs (0.4.0-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- David Paleino <dapal@debian.org>  Sat, 31 Dec 2011 11:41:53 +0100
+
+node-qs (0.3.2-1) unstable; urgency=low
+
+  * New upstream version
+  * Add debian/watch
+
+ -- David Paleino <dapal@debian.org>  Wed, 16 Nov 2011 22:41:43 +0100
+
+node-qs (0.3.1-2) unstable; urgency=low
+
+  * Compliance to Debian Javascript Policy
+
+ -- David Paleino <dapal@debian.org>  Sun, 16 Oct 2011 00:00:18 +0200
+
+node-qs (0.3.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #645178)
+
+ -- David Paleino <dapal@debian.org>  Thu, 13 Oct 2011 12:13:09 +0200

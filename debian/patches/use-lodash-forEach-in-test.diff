@@ -1,0 +1,16 @@
+Description: use lodash/forEach
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2019-10-20
+
+--- a/test/utils.js
++++ b/test/utils.js
+@@ -3,7 +3,7 @@
+ var test = require('tape');
+ var inspect = require('object-inspect');
+ var SaferBuffer = require('safer-buffer').Buffer;
+-var forEach = require('for-each');
++var forEach = require('lodash/forEach');
+ var utils = require('../lib/utils');
+ 
+ test('merge()', function (t) {

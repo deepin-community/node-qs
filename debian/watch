@@ -1,0 +1,8 @@
+version=4
+opts=filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-qs-$1/,\
+repacksuffix=+ds,\
+dversionmangle=auto \
+https://github.com/hapijs/qs/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,component=types-qs,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-qs-$1/" \
+ https://registry.npmjs.org/@types/qs https://registry.npmjs.org/@types/qs/-/qs-([\d\.]+)@ARCHIVE_EXT@ group

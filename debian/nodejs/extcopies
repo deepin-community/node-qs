@@ -1,0 +1,17 @@
+available-typed-arrays
+call-bind
+es-abstract
+foreach
+function-bind
+get-intrinsic
+has-symbols
+has-tostringtag
+has
+inherits
+is-arguments
+is-generator-function
+is-typed-array
+object-inspect
+side-channel
+util
+which-typed-array
